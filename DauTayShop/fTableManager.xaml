@@ -1,0 +1,40 @@
+﻿<Window x:Class="DauTayShop.fTableManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DauTayShop"
+        mc:Ignorable="d"
+        Title="fTableManager" Height="550" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu Width="800" Height="50" VerticalAlignment="Top" Background="Aqua">
+            <MenuItem Header="Amin">
+                <MenuItem Header="My Account"/>
+                <MenuItem Header="Logout"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="ExitMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Cut"/>
+                <MenuItem Header="Copy"/>
+                <MenuItem Header="Paste"/>
+            </MenuItem>
+            <!-- Các mục menu khác -->
+        </Menu>
+        <WrapPanel Margin="0,50,400,0" Background="BlueViolet">
+
+        </WrapPanel>
+        <ComboBox Width="200" Height="20" Margin="405,57,195,457"/>
+        <ComboBox Width="200" Height="20" Margin="405,82,195,432"/>
+        <Button Width="100" Height="40" Content="Thêm món" Margin="614,62,86,432" ></Button>
+        <Label Content="Số lượng" FontSize="8" Margin="725,52,13,457"/>
+        <TextBox HorizontalAlignment="Left" Margin="725,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Height="25"/>
+
+        <StackPanel Background="Aqua" Margin="405,117,10,34"/>
+        <ComboBox HorizontalAlignment="Left" Margin="405,505,0,0" VerticalAlignment="Top" Width="88" Height="29"/>
+        <TextBlock HorizontalAlignment="Left" Margin="545,505,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="29" Width="85"/>
+        <Button Content="Thanh toán" Height="29" RenderTransformOrigin="0.62,0.563" Margin="684,505,36,0"/>
+
+    </Grid>
+</Window>
